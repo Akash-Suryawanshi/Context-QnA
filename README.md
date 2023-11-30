@@ -5,7 +5,7 @@
 The task at hand involves developing a Query Engine for the English language based on a given data source in CSV format.
 
 ## Approach
-
+![Outline](/idea_chart.jpeg)
 ### Storing Data into a Vector DB
 
 The initial step is to determine an effective method for storing the content of the CSV file into our Vector Database. This involves capturing product descriptions along with other relevant fields. For instance, utilizing fields such as product, category, subcategory, sale price, and market price, I formulated meaningful sentences like "The product <product> belongs to the category <category> and subcategory <subcategory>," consolidating them into a single field called 'description.' Additionally, a list of dictionaries was created to store metadata for each product as a payload. Cosine similarity was employed during the collection creation process to measure the similarity of different vectors. The embeddings were generated using the MiniLM-L6-v2 model from HuggingFace, fine-tuned on a dataset comprising 1 billion sentence pairs.
