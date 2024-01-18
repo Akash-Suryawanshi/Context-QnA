@@ -16,4 +16,4 @@ When a user poses a question, the question is encoded using the previously menti
 
 ### Wrapping the LLM with an API
 
-Efforts were made to integrate the LLM with an API, with attempts made using ChainLIT. However, due to time constraints, this integration was not completed.
+Working ..
